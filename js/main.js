@@ -21,11 +21,6 @@ $(document).ready(function(){
 
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-    var marker = new google.maps.Marker({
-      position: new google.maps.LatLng(latitude, longitude),
-      map: map
-    });
-
     addAllMarkers(map);
   }
 
