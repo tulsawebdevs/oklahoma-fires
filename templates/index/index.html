@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="//maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="/static/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Current Oklahoma Fires</h1>
+      <h2>Brought to you by <a href="http://tulsawebdevs.org">Tulsa Web Devs</a></h2>
+    </header>
+    <div id="content">
+      Markers are of fires recorded in the <em>last 48 hours</em>.<br />
+      Data Aquired from <a href="http://earthdata.nasa.gov/">NASA EOSDIS</a>. Dataset is <a href="http://earthdata.nasa.gov/data/near-real-time-data/data/firms/active-fire-data">Active Fire Data</a>
+    </div>
+    <div id="map">
+      Google Map should be Here.
+    </div>
+  </body>
+</html>
