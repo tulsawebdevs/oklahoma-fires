@@ -6,5 +6,8 @@ from .serializers import EventSerializer
 
 
 class EventListView(ListAPIView):
-    queryset = Event.objects.all()
     serializer_class = EventSerializer
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+        return qs.filter(acq_datetime__gt=arrow.utcnow().replace(days=-2))
